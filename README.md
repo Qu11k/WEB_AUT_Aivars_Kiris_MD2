@@ -1,1 +1,1 @@
-# Qu11k-WEB_AUT_Aivars_Kiris_MD2
+# WEB_AUT_Aivars_Kiris_MD2
