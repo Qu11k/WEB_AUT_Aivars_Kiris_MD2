@@ -34,4 +34,20 @@ describe('CURA Tests', () => {
 // end of sc 1
 //======================================================================
   })
+  it('Scenario 2 - Clean history', () => {
+
+    mainPage.visit()
+
+    mainPage.makeAppointment.click()
+
+    loginPage.username.type('John Doe')
+    loginPage.password.type('ThisIsNotAPassword')
+    loginPage.loginButton.click()
+//menu
+    mainPage.menuToggle.click()
+    mainPage.sidebar.should('have.class', 'active')
+    mainPage.historyLink.click()
+    mainPage.noAppointmentText.should('be.visible')
+
+  })
 })
